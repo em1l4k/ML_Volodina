@@ -1,6 +1,5 @@
 import numpy as np
 
-
 ''''#Библиотека NumPy
 
 #Создайте одномерный массива NumPy из 5 элементов.
@@ -57,7 +56,7 @@ def Neutal_Network(inp,weights):
     prediction_3 = prediction_2.dot(weights[1])
     return prediction_3
 inp=np.array([23,45])
-'''
+
 weight_1_1 = [0.4, 0.1]
 weight_1_2 = [0.3, 0.2]
 
@@ -67,26 +66,16 @@ weight_2_2 = [0.3, 0.1]
 weights_h_3 = [0.6, 0.2]
 weights_out_3 = [0.7, 0.4]
 
-weight_1=np.array([weight_1_1,weight_1_2]).T
-weight_2=np.array([weight_2_1,weight_2_2]).T
-weight_3=np.array([weights_h_3,weights_out_3]).T'''
+#weight_0=np.array([weight_1_1,weight_1_2]).T
+#weight_1=np.array([weight_2_1,weight_2_2]).T
+#weight_3=np.array([weights_h_3,weights_out_3]).T
 
 
 #Замените списки с фиксированными весами на массивы numpy, причём с генерацией случайных значений в них.
-weight_1_1 = np.random.rand(1,2)
-weight_1_2 = np.random.rand(1,2)
-
-weight_2_1 = np.random.rand(1,2)
-weight_2_2 = np.random.rand(1,2)
-
-weights_h_3 = np.random.rand(1,2)
-weights_out_3 = np.random.rand(1,2)
-
-weight_1=np.array([weight_1_1[0],weight_1_2[0]]).T
-weight_2=np.array([weight_2_1[0],weight_2_2[0]]).T
-weight_3=np.array([weights_h_3[0],weights_out_3[0]]).T
-
-
+weight_1=np.random.rand(1,3)
+weight_2=np.random.rand(1,3)
+weight_3=np.random.rand(1,3)
+print(weight_1,weight_2)
 weights=weight_1,weight_2,weight_3
 
 print(Neutal_Network(inp,weights))
