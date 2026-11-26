@@ -1,9 +1,8 @@
-
 import numpy as np
 
 def neural_networks(inp, weights):
     return inp.dot(weights)
-
+#функции активации вводят нелинейность в вычисления
 def relu(x):
     return np.maximum(0, x)
 
